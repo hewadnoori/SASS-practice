@@ -13,13 +13,11 @@
       margin: 0.35em 0 0;
       line-height: 1.25;
     }
-    @include mq('med') {
-      @include center;
-    }
-    @include mq('sm'){
+    
+    @media (min-width: $break-s) {
       flex: 1 per-line(2);
     }
-    @include mq('l'){
+    @media(min-width: $break-l){
       flex-basis: per-line(3);
     }
   }
